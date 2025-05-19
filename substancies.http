@@ -9,7 +9,7 @@ Content-Type: application/json
 }
 
 ### Activate draft (Replace {SubstanciesID} with your actual ID)
-POST http://localhost:8080/odata/v4/AdminService/Substancies(ID=225e5787-8d42-4000-904b-7e89d6d5a5cc,IsActiveEntity=false)/AdminService.draftActivate
+POST http://localhost:8080/odata/v4/AdminService/Substancies(ID={SubstanciesID},IsActiveEntity=false)/AdminService.draftActivate
 Authorization: Basic admin admin
 Content-Type: application/json
 

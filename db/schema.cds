@@ -49,8 +49,7 @@ entity AdminService_Substancies_drafts : cuid, managed, DraftEnabledEntity{
   compositionItemGroup : Association to many ItemGroups_DraftEnabled on compositionItemGroup.itemID = compositionItem.ID;
 
 }
-
-annotate AdminService_Substancies_drafts with @cds.persistence.exists: false;
+// annotate AdminService_Substancies_drafts with @cds.persistence.exists: false;
 
 entity Configurations : cuid, managed{
   displayId     : String(30);
