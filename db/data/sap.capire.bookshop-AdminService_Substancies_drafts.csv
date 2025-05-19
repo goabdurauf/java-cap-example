@@ -1,0 +1,3 @@
+ID,calculation_ID,compositionItem_ID,createdAt,createdBy,modifiedAt,modifiedBy,IsActiveEntity,HasActiveEntity,HasDraftEntity
+32e284bb-e5ce-401a-9b57-6397b1cb0394,dfe3cabc-e72a-4b2f-9b31-c9eabf63e101,ab12cd34-ef56-7890-ab12-cd34ef567890,2025-05-19T03:50:52.356838Z,admin,2025-05-19T03:50:52.356838Z,admin,false,false,false
+6d44d7ba-b082-4830-aca6-b1b501f54557,dfe3cabc-e72a-4b2f-9b31-c9eabf63e101,ab12cd34-ef56-7890-ab12-cd34ef567890,2025-05-19T03:54:56.195863Z,admin,2025-05-19T03:54:56.195863Z,admin,false,false,false

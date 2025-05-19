@@ -1,0 +1,20 @@
+### Create a new Substancies entry
+POST http://localhost:8080/odata/v4/AdminService/Substancies
+Authorization: Basic admin admin
+Content-Type: application/json
+
+{
+  "calculation_ID": "dfe3cabc-e72a-4b2f-9b31-c9eabf63e101",
+  "compositionItem_ID": "ab12cd34-ef56-7890-ab12-cd34ef567890"
+}
+
+### Activate draft (Replace {SubstanciesID} with your actual ID)
+POST http://localhost:8080/odata/v4/AdminService/Substancies(ID=225e5787-8d42-4000-904b-7e89d6d5a5cc,IsActiveEntity=false)/AdminService.draftActivate
+Authorization: Basic admin admin
+Content-Type: application/json
+
+{}
+
+### Get all Substancies
+GET http://localhost:8080/odata/v4/AdminService/Substancies?$expand=compositionItemGroup,compositionItem
+Authorization: Basic admin admin

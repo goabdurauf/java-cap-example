@@ -1,0 +1,6 @@
+ID,displayId,name
+ab12cd34-ef56-7890-ab12-cd34ef567890,ITM-001,Glucose
+cd34ef56-ab12-7890-cd34-ef567890ab12,ITM-002,Sucrose
+ef56ab12-cd34-7890-ef56-7890ab12cd34,ITM-003,Lactose
+1234abcd-5678-90ef-1234-abcd567890ef,ITM-004,Fructose
+5678abcd-1234-90ef-5678-abcd123490ef,ITM-005,Starch
