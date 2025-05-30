@@ -15,6 +15,12 @@ cds:
           roles[0]: admin
         user:
           password: user
+    log-potentially-sensitive: true
   data-source:
     auto-config:
       enabled: false
+logging:
+  level:
+    com:
+      sap:
+        cds: DEBUG
