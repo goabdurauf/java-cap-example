@@ -46,11 +46,10 @@ entity Substancies : cuid, managed{
 entity AdminService_Substancies_drafts : cuid, managed, DraftEnabledEntity{
   calculation       : Association to one Configurations;
   compositionItem   : Association to one Items;
-  compositionItemGroup : Association to many ItemGroups_DraftEnabled on compositionItemGroup.itemID = compositionItem.ID;
+  compositionItemGroup : Association to many ItemGroups on compositionItemGroup.itemID = compositionItem.ID;
 
 }
-
-annotate AdminService_Substancies_drafts with @cds.persistence.exists: false;
+// annotate AdminService_Substancies_drafts with @cds.persistence.exists: false;
 
 entity Configurations : cuid, managed{
   displayId     : String(30);
@@ -69,15 +68,15 @@ view ItemGroups as
 
 // New draft-enabled view that includes draft fields
 // This will be used by draft-enabled entities
-view ItemGroups_DraftEnabled as
-    select from ItemGroupAssignment as assignment
-    inner join Items as item on assignment.compositionItem.ID = item.ID
-    inner join Groups as itemGroup on assignment.compositionGroup.ID = itemGroup.ID {
-      key item.ID as itemID,
-      key itemGroup.ID as groupID,
-      itemGroup.displayId as displayID,
-      itemGroup.status_code as status_code
-    }
+// view ItemGroups_DraftEnabled as
+//     select from ItemGroupAssignment as assignment
+//     inner join Items as item on assignment.compositionItem.ID = item.ID
+//     inner join Groups as itemGroup on assignment.compositionGroup.ID = itemGroup.ID {
+//       key item.ID as itemID,
+//       key itemGroup.ID as groupID,
+//       itemGroup.displayId as displayID,
+//       itemGroup.status_code as status_code
+//     }
 
 entity ItemGroupAssignment : cuid{
     compositionItem   : Association to Items;
